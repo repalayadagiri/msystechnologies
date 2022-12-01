@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Regiatration</title>
+    <link rel="stylesheet" href="01_Basic_Registration_Form.css" />
+  </head>
+  <body>
+    <div class="mainbox">
+      <h1 class="title">Registration Form</h1>
+      <hr />
+      <form>
+        <label>First Name </label>
+        <input
+          type="text"
+          placeholder="First Name"
+          class="input"
+          id="Firstname"
+          onfocusout="FirstName()"
+        />
+        <label>Last Name</label>
+        <input
+          type="text"
+          placeholder="Last Name"
+          class="input"
+          id="Lastname"
+          onfocusout="lasttName()"
+        />
+
+        <label>Email Id </label>
+        <input
+          type="email"
+          placeholder="Email Id"
+          class="input"
+          id="Email"
+          onfocusout="email()"
+        />
+
+        <label>Password </label>
+        <input
+          type="password"
+          class="input"
+          placeholder="Enter Password"
+          id="Password"
+          onfocusout="password()"
+        />
+
+        <label>Confirm Password</label>
+        <input
+          type="password"
+          class="input"
+          placeholder="Confirm Password"
+          id="C_Password"
+          onfocusout="cpassword()"
+        />
+
+        <label>Date of Birth</label>
+        <input type="date" class="input" id="DOB" onfocusout="dates()" />
+        <label>Contact No</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="Mobile Number"
+          id="MobileNumber"
+          onfocusout="Mobile()"
+        />
+
+        <div class="radiobtn">
+          <label>Gender*</label>
+          <div id="gender">
+            <input type="radio" id="Male" name="gender" value="Male" checked />
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="Female" />
+            <label for="Female">Female</label>
+            <input type="radio" id="Others" name="gender" value="Others" />
+            <label for="Others">Others</label>
+          </div>
+        </div>
+
+        <label>Address</label>
+        <textarea class="input" id="Address" onfocusout="Addres()"> </textarea>
+
+        <label>Zip Code</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter Zip Code"
+          id="ZipCode"
+          onfocus="zipcode()"
+        />
+
+        <div>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">I Agree Terms And Conditions</label>
+        </div>
+        <button type="button" class="btn" onclick="valid()">Register</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="01_Basic_Registration_Form.js"></script>
+  </body>
+</html>

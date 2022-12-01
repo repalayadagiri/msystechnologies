@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e4068f;
+}
+.mainbox {
+  width: 500px;
+  background: #fff;
+  margin: 20px auto;
+  padding: 30px 30px 15px 30px;
+  box-shadow: 0 0 0px 12px rgb(0 0 0 / 13%);
+  border-radius: 10px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+form {
+  margin-top: 20px;
+}
+form > label {
+  display: block;
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+}
+
+.input {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid red;
+  outline: 0;
+  width: 60%;
+  color: #970505;
+  position: relative;
+  left: 150px;
+}
+.radiobtn {
+  display: flex;
+  flex-direction: row;
+  color: red;
+  padding-bottom: 14px;
+}
+.radiobtn div {
+  margin-left: 100px;
+}
+.radiobtn div label {
+  margin-right: 15px;
+}
+.btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #c50b0b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 10px 0px;
+}
+
+form > label:hover {
+  color: green;
+  font-weight: 600;
+}
+form > label::after {
+  content: "*";
+}
+
+input:focus {
+  color: blue;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: #fff;
+  }
+  .mainbox {
+    box-shadow: 0 0 0px 0 rgb(0 0 0 / 0%);
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 959px) {
+  body {
+    background-color: green;
+  }
+  .mainbox {
+    box-shadow: 0 0 0px 10px rgb(0 0 0 / 15%);
+  }
+  form label {
+    color: green;
+  }
+  .input {
+    border-bottom: 1px solid green;
+  }
+  .btn {
+    background-color: green;
+  }
+}
